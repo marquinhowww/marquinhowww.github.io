@@ -1,5 +1,5 @@
 ---
-title: Vamos criar nossos próprios assistentes virtuais
+title: Criando um bot serverless para telegram
 date: "2020-04-06T17:43:39.910Z"
 description: Começando pelo telegram
 ---
@@ -69,7 +69,7 @@ app.listen(APP_PORT, () => {
 
 O esquema é criar uma API simples, com uma rota de /setup inicialmente, que vai ser útil mais tarde. Claro, não esqueça de instalar os módulos (express e telegraf).
 
-### Explicando esta merda por partes:
+### Explicando por partes:
 
 1 -- Instanciando nosso bot com o TOKEN que você gerou utilizando o BotFather lá no primeiro passo.
 ```js
