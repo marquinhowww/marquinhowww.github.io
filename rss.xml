@@ -1,4 +1,224 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[eptaccio]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Apr 2020 05:37:34 GMT</lastBuildDate><item><title><![CDATA[Criando um bot serverless para telegram]]></title><description><![CDATA[Eu gosto muito de criar bots, principalmente no telegram pela facilidade. Na verdade eu sempre fui um grande evangelista do Telegram, quem…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/telegram-bot/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/telegram-bot/</guid><pubDate>Mon, 06 Apr 2020 17:43:39 GMT</pubDate><content:encoded>&lt;p&gt;Eu gosto muito de criar bots, principalmente no telegram pela facilidade. Na verdade eu sempre fui um grande evangelista do Telegram, quem me conhece sabe disso. Então nada mais justo do que falar sobre bots nessa plataforma que simplifica muito o processo de criação dos mesmos.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[eptaccio]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Apr 2020 15:23:50 GMT</lastBuildDate><item><title><![CDATA[Como eu construi um BOT para mixagem de aúdios no telegram]]></title><description><![CDATA[Esse bot é uma continução do meu primeiro post primeiro POST onde mostro como criar um BOT e subir no now.sh. Primeiramente peço perdão a…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/dj-marcinho/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/dj-marcinho/</guid><pubDate>Sat, 11 Apr 2020 17:43:39 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6bdc2fa5d9194a6227bb45ff985d48a0/3382b/bg.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.21621621621621%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAavHKKbA/8QAGRAAAwEBAQAAAAAAAAAAAAAAAQISAAMi/9oACAEBAAEFAgRLqSr1Xf3nc5Uvf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EAB4QAQABAwUBAAAAAAAAAAAAAAEAAiFBESIxUWGB/9oACAEBAAY/AnfVAGx5OaY4TPcNcRbfSf/EAB4QAQACAgEFAAAAAAAAAAAAAAEAETFBIWGBkaGx/9oACAEBAAE/IRmEbaPCalHjQ3PU3l7wBR0z6mZPPTVzIMqyM//aAAwDAQACAAMAAAAQEw//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAEBAAICAwEAAAAAAAAAAAABEQAhMUFRYfCB/9oACAEBAAE/EBA+6olmheQRw+IeAnz1gvfAKg1+4I3emxog79eMYNE9fBx3cXYAlaUHaJ58Z//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;mesa de audio&quot;
+        title=&quot;mesa de audio&quot;
+        src=&quot;/static/6bdc2fa5d9194a6227bb45ff985d48a0/1c72d/bg.jpg&quot;
+        srcset=&quot;/static/6bdc2fa5d9194a6227bb45ff985d48a0/a80bd/bg.jpg 148w,
+/static/6bdc2fa5d9194a6227bb45ff985d48a0/1c91a/bg.jpg 295w,
+/static/6bdc2fa5d9194a6227bb45ff985d48a0/1c72d/bg.jpg 590w,
+/static/6bdc2fa5d9194a6227bb45ff985d48a0/a8a14/bg.jpg 885w,
+/static/6bdc2fa5d9194a6227bb45ff985d48a0/fbd2c/bg.jpg 1180w,
+/static/6bdc2fa5d9194a6227bb45ff985d48a0/3382b/bg.jpg 3822w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Esse bot é uma continução do meu &lt;a href=&quot;/telegram-bot/&quot;&gt;primeiro post&lt;/a&gt; primeiro POST onde mostro como criar um BOT e subir no now.sh.&lt;/p&gt;
+&lt;p&gt;Primeiramente peço perdão a todos DJs e produtores e que realmente mixam coisas, isso que vou mostrar uma brincadeira de final de semana entediado.&lt;/p&gt;
+&lt;p&gt;Eu sempre gostei muito de música mas infelizmente nunca aprendi tocar nada, e por não saber nada de música támbem nunca consegui trabalhar em produções. Esse experimento é uma forma de eu conseguir demonstrar meu amor por música.&lt;/p&gt;
+&lt;p&gt;Antes que você desista do texto, porque já escrevi de mais, esse é resultado final:&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 100%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;div&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/f-t-iY14bSM&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;a href=&quot;https://t.me/DjMarcinhoBot&quot;&gt;&lt;em&gt;Converse com o DJ Marcinho no telegram&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Ingredientes&lt;/h2&gt;
+&lt;h3&gt;ffmpeg&lt;/h3&gt;
+&lt;p&gt;Mixagem de áudio programaticamente é uma coisa muito interassante, para esse bot utilizei o &lt;a href=&quot;https://www.ffmpeg.org/&quot;&gt;ffmpeg&lt;/a&gt;. Uma solução de linha de comando open source para manipulação de áudio.&lt;/p&gt;
+&lt;h3&gt;now.sh&lt;/h3&gt;
+&lt;p&gt;Uma plataforma para funções serverless que tem limites gratuitos bem generosos para códigos &lt;strong&gt;OPEN SOURCE&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;node.js&lt;/h3&gt;
+&lt;p&gt;A mano, uma plataforma que usa o V8 da google para tu conseguir criar servidores que rodam javascript.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Fluxo&lt;/h2&gt;
+&lt;h3&gt;&lt;strong&gt;I&lt;/strong&gt; - Bot aguarda evento de áudio enviado&lt;/h3&gt;
+&lt;p&gt;Geralmente eu adiciono esse bot em grupos, a brincadeira fica mais legal. Como já mencionado estou utilizando o &lt;a href=&quot;https://github.com/telegraf/telegraf&quot;&gt;telegraf&lt;/a&gt; que felizmente consegue fazer a filtragem de mensagens programaticamente e separar isso em eventos para facilitar nossa vida.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;bot&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;voice&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;audio&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;ctx&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token comment&quot;&gt;// lógicas aqui pipipi popopo&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;No final acabei inventando umas modas aqui, mas o conceito base é esse.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;II&lt;/strong&gt; - Envia menu com opções de áudio&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 549px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/419fb74749937e5310476c687f9403b3/588f6/menu.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwACBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAecSgJZj/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAIREjH/2gAIAQEAAQUCa3bG2G7CH//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABkQAQACAwAAAAAAAAAAAAAAAAEAMRAicf/aAAgBAQAGPwJ2ZbLY9z//xAAcEAACAQUBAAAAAAAAAAAAAAAAAUEhYXGRweH/2gAIAQEAAT8hr87kSl0F7Am0ZCuP/9oADAMBAAIAAwAAABDoL//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/EKf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAfEAACAQQCAwAAAAAAAAAAAAAAAREhQVHRMWHB8PH/2gAIAQEAAT8QojkoT5YgKaLt9jC83ZfPoz2gpvtg/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;menu do bot quando um áudio chega&quot;
+        title=&quot;menu do bot quando um áudio chega&quot;
+        src=&quot;/static/419fb74749937e5310476c687f9403b3/588f6/menu.jpg&quot;
+        srcset=&quot;/static/419fb74749937e5310476c687f9403b3/a80bd/menu.jpg 148w,
+/static/419fb74749937e5310476c687f9403b3/1c91a/menu.jpg 295w,
+/static/419fb74749937e5310476c687f9403b3/588f6/menu.jpg 549w&quot;
+        sizes=&quot;(max-width: 549px) 100vw, 549px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;O projeto tem uma pasta com os áudios, estou fazendo uma listagem dos nomes dos arquivos com o FS para oferecer no menu posteriormente:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// avaibleBeats.js&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; getBeatsPath &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;lib/path&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fs &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;fs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; avaibleBeats &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;readdirSync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getBeatsPath&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  avaibleBeats
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A partir dessa listagem dos aúdios disponíveis, montei uma lista de “callback button” (botão de retorno), o telegraf também abstrai isso de um jeito bem fácil.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; callBacks &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; avaibleBeats&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;beat&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Markup&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;callbackButton&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;beat&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; beat&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; inlineMessageRatingKeyboard &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Markup
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;inlineKeyboard&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;callBacks&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;extra&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// opção para responder diretamente no aúdio&lt;/span&gt;
+      Extra&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;inReplyTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;message&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;message_id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;Select a style&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    inlineMessageRatingKeyboard
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;strong&gt;III&lt;/strong&gt; - Faz download do áudio enviado&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;saveFileLocal&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; filePath&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; bot&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fileId &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fileLink &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; bot&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;telegram&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getFileLink&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fileId&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; data&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; fileStream &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;axios&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    url&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; fileLink&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    responseType&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;stream&apos;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; writeFileStream &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createWriteStream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;filePath&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;resolve&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    writeFileStream&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;finish&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; resolve&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    writeFileStream&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    fileStream
+      &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;writeFileStream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Explicando em detalhes:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fileLink &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; bot&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;telegram&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getFileLink&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fileId&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Constroi o link para download do arquivo de aúdio enviado pelo usuário.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; data&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; fileStream &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;axios&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  url&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; fileLink&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  responseType&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;stream&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Veja esse post sobre &lt;a href=&quot;https://imasters.com.br/back-end/streams-no-node-js-o-que-sao-streams-afinal-parte-01&quot;&gt;streams&lt;/a&gt; caso não esteja familiarizado. Estou criando recebendo um fileStream da API do telegram e juntando isso à um writeFileStream, um stream de escrita para escrever o arquivo no disco.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;resolve&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  writeFileStream&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;finish&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; resolve&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  writeFileStream&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  fileStream
+    &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;writeFileStream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Como estou usando devolvendo uma promise, passei o &lt;strong&gt;resolve&lt;/strong&gt; e &lt;strong&gt;reject&lt;/strong&gt; da promise para os eventos de &lt;strong&gt;finish&lt;/strong&gt; e &lt;strong&gt;error&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Esse bot está rodando em serverless no &lt;a href=&quot;now.sh&quot;&gt;now.sh&lt;/a&gt;. Em geral não é possivel escrever no disco de uma função serverless (&lt;em&gt;perdi um tempinho para descobrir isso na primeira vez&lt;/em&gt;), então todos os áudios são salvos na pasta &lt;strong&gt;TEMP&lt;/strong&gt; do &lt;strong&gt;SO&lt;/strong&gt;. &lt;em&gt;Grazadeus&lt;/em&gt; no modulo &lt;strong&gt;os&lt;/strong&gt; do node temos uma função chamada &lt;strong&gt;tmpdir&lt;/strong&gt; que nos passa o caminho da pasta TEMP do SO em questão, assim fica mais fácil.&lt;/p&gt;
+&lt;p&gt;Aqui acabamos entrando em um tópico de privacidade, todos os áudios são &lt;strong&gt;TEMPORÁRIOS&lt;/strong&gt;, nada fica salvo em nenhuma base de dados.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;IV&lt;/strong&gt; - Aciona o ffmpeg para fazer o mix do aúdio do usário com a faixa selecionada&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; stdout&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; stderr &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;spawn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;binariePatch&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;close&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;outputDirectory&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Como comentei no inicio do POST estou utilizando o &lt;strong&gt;ffmpeg&lt;/strong&gt;. Isso mesmo, eu subi o binário juntamente ao deploy e estou executando o mesmo usando o metodo &lt;strong&gt;spawn&lt;/strong&gt; do módulo &lt;strong&gt;child_process&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;child_process&lt;/strong&gt; é um modulo nátivo no nodejs que permite que a gente crie novos processos a partir do processo principal. Com esse módulo o nosso bot cria um processo no sistema operacional executando um binário (&lt;strong&gt;ffmpeg&lt;/strong&gt;) com os argumentos que precisava para fazer o mix do áudio acontecer.&lt;/p&gt;
+&lt;p&gt;O módulo &lt;strong&gt;child_process&lt;/strong&gt; possui alguns metodos para esse típo de ação, dentre eles: &lt;strong&gt;fork()&lt;/strong&gt;, &lt;strong&gt;spawn()&lt;/strong&gt;, &lt;strong&gt;exec()&lt;/strong&gt; e &lt;strong&gt;execFile()&lt;/strong&gt;. Estou utilizando o método &lt;strong&gt;spawn()&lt;/strong&gt; lançando um novo comando no SO, recebendo como respota um objeto do tipo &lt;strong&gt;ChildProcess&lt;/strong&gt;, que implementa o &lt;strong&gt;EventEmitter API&lt;/strong&gt; para felizmente nos permitir adicionar listeners (ouvintes), como fiz no código acima.&lt;/p&gt;
+&lt;p&gt;Argumentos de mix do &lt;strong&gt;ffmpeg&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; mergeArgs &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&apos;-y&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&apos;-i&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  filePath&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&apos;-i&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  beatPath&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&apos;-filter_complex&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&apos;amerge=inputs=2&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&apos;-ac&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&apos;2&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  outputDirectory
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Essa é a forma que o bot monta os args para o mix de aúdio, no fim isso vai virar algo assim:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -y -i kaio_do_quebradev.ogg -i NARUTO_SAD_SONG.mp3 -filter_complex &lt;span class=&quot;token assign-left variable&quot;&gt;amerge&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;inputs&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; -ac &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; final.mp3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Você pode executar isso no seu terminal se tiver o &lt;a href=&quot;https://ffmpeg.org/&quot;&gt;binário do &lt;strong&gt;ffmpeg&lt;/strong&gt;&lt;/a&gt;, vai rolar.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Explicando os argumentos utilizados:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-y&lt;/strong&gt;:&lt;br&gt;
+Confirmação de que você quer sobrescrever o arquivo de output, caso ele já exista.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-i&lt;/strong&gt;:&lt;br&gt;
+Informa um INPUT, um áudio que já existe e sera utilizado.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-filter_complex&lt;/strong&gt;:&lt;br&gt;
+Quando precisamos fazer algo mais cabreiro no FFMPEG usamos essa opção para conseguir chegar no resultado, o filter_complex permite que passemos como argumento para processamento do audio um “filter graph”. Como o nome já diz é bem complexo então não vou me extender, até porque não sou um especialista no assunto.&lt;/p&gt;
+&lt;p&gt;Para esse argumento estou sempre informando &lt;strong&gt;amerge=inputs=2&lt;/strong&gt; que quer dizer: &lt;strong&gt;Eu quero que você faça o merge de dois streams de áudio em um só.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-ac:&lt;/strong&gt;&lt;br&gt;
+Seta o número de canais de áudio. Nessa parte a gente já começa entrar em uma ciencia de foguete, coisa de quem manja de audio real (salve &lt;a href=&quot;https://twitter.com/gustv0_&quot;&gt;Gustavo&lt;/a&gt;). Então se quiser se aprofundar nessa parte &lt;a href=&quot;https://trac.ffmpeg.org/wiki/AudioChannelManipulation&quot;&gt;confira esse link&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;V&lt;/strong&gt; - Envia o áudio pro usuário&lt;/h3&gt;
+&lt;p&gt;E Claro, a cereja do bolo, enviar o resultado para o usuário:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;  &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; ctx&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replyWithAudio&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; source&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; file &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Visão geral (programática) do processo&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; selectedBeatName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; info&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;actionName
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; fileId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fileType &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getFileInfo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ctx&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; filePath &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getFilePath&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fileId&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;saveFileLocal&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; filePath&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; bot&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fileId &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; outputMixPath &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;mergeAudios&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  filePath&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  fileType&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  beat&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; selectedBeatName
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; mixResult &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getFileBuffer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;outputMixPath&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sendFile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; fileType&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; file&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; mixResult&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ctx &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Deploy&lt;/h2&gt;
+&lt;p&gt;Segui basicamente as instruções do &lt;a href=&quot;/telegram-bot/&quot;&gt;meu primeiro post&lt;/a&gt;, com um diferencial, na sessão de builds do &lt;strong&gt;now.json&lt;/strong&gt; informei que o projeto deveria levar os binarios do FFMPEG e também as faixas de áudio disponíveis. &lt;em&gt;Se atente ao includeFiles&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;builds&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;src&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;index.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;use&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@now/node-server&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;config&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token string&quot;&gt;&quot;includeFiles&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&quot;binaries/**&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&quot;audios/**&quot;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Resultado final:&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/DjMarcinhoBot&quot;&gt;&lt;em&gt;Converse com o DJ Marcinho no telegram&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/eptaccio/dj-telegram-bot&quot;&gt;Código no github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://zeit.co/eptaccio/djproducerbot/fvnyq8bgc/source&quot;&gt;Código rodando em PROD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Se tiver algum feedback ou conseguir construir algo legal a partir disso por favor me chame no &lt;a href=&quot;https://twitter.com/eptaccio&quot;&gt;twitter&lt;/a&gt; ou &lt;a href=&quot;https://t.me/eptaccio&quot;&gt;telegram&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Obrigado por ler até o final.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Criando um bot serverless para telegram]]></title><description><![CDATA[Eu gosto muito de criar bots, principalmente no telegram pela facilidade. Na verdade eu sempre fui um grande evangelista do Telegram, quem…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/telegram-bot/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/telegram-bot/</guid><pubDate>Mon, 06 Apr 2020 17:43:39 GMT</pubDate><content:encoded>&lt;p&gt;Eu gosto muito de criar bots, principalmente no telegram pela facilidade. Na verdade eu sempre fui um grande evangelista do Telegram, quem me conhece sabe disso. Então nada mais justo do que falar sobre bots nessa plataforma que simplifica muito o processo de criação dos mesmos.&lt;/p&gt;
 &lt;p&gt;Tá, basicamente vou mostrar duas coisas:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Como criar um chatbot (usando node.js)&lt;/li&gt;
@@ -109,7 +329,7 @@ app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;listening on &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;APP_PORT&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;O esquema é criar uma API simples, com uma rota de /setup inicialmente, que vai ser útil mais tarde. Claro, não esqueça de instalar os módulos (express e telegraf).&lt;/p&gt;
-&lt;h3&gt;Explicando esta merda por partes:&lt;/h3&gt;
+&lt;h3&gt;Explicando por partes:&lt;/h3&gt;
 &lt;p&gt;1 — Instanciando nosso bot com o TOKEN que você gerou utilizando o BotFather lá no primeiro passo.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// instanciando o bot&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; bot &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Telegraf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;BOT_TOKEN&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
