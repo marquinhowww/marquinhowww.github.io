@@ -1,7 +1,7 @@
 ---
 title: Criando um bot serverless para telegram
 date: "2020-04-06T17:43:39.910Z"
-description: Começando pelo telegram
+description: Faça seu bot em casa
 ---
 
 Eu gosto muito de criar bots, principalmente no telegram pela facilidade. Na verdade eu sempre fui um grande evangelista do Telegram, quem me conhece sabe disso. Então nada mais justo do que falar sobre bots nessa plataforma que simplifica muito o processo de criação dos mesmos.
