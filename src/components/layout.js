@@ -60,7 +60,8 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer>
         <hr />
-        to no <a href='https://www.twitter.com/eptaccio'>twitter</a>
+        to no <a href='https://www.twitter.com/eptaccio'>twitter</a><br />
+        eptaccio@gmail.com
       </footer>
     </div>
   )
