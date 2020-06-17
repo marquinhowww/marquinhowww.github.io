@@ -29,13 +29,13 @@
   </a>
     </span></p>
 <p><em>A <a href="https://twitter.com/bienalquebrada"><strong>Bienal do Livro da Quebrada</strong></a> tem como missão a democracia de oportunidades. Levar para as favelas e periferias a literatura e um evento literário que dialogue na linguagem de quem teve e tem o acesso negado. As Bienais ocorrem sempre nos grandes centros, a distância geográfica e social afasta desses eventos as pessoas que moram nas periferias, ainda que haja uma tentativa de inclusão, ela é feita de maneira que quem vem das periferias não se sentem pertencentes a esses espaços.</em></p>
-<p>Felizmente a Bienal recebe várias solicitações de pessoas querendo doar livros, então o criador do movimento, <a href="https://twitter.com/alamoju">@alamoju</a> me chamou e perguntou se seria possível automatizar um pouco o processo de doações via DM do twitter.</p>
+<p>Felizmente a Bienal recebe várias solicitações de pessoas querendo doar livros, então o criador do movimento, <a href="https://twitter.com/alamoju">@alamoju</a> me chamou e perguntou se seria possível automatizar um pouco o processo de doações via DM do Twitter.</p>
 <p>Já tinha feito algumas coisas utilizando a API do twitter mas o de Direct Messages era novidade para mim até então. Ainda estamos trabalhano no bot mas vou mostrar como foi essa saga até agora.</p>
 <h3>Conseguindo keys da API do twitter</h3>
-<p>O twitter trabalhar com APPS (aplicações) dentro da plataforma. Essas aplicações podem ser distribuídas ou não. Cada aplicação tem seus TOKENS de acesso entre outras coisas para organização.</p>
-<p>Apenas <a href="https://developer.twitter.com/en/apply-for-access">contas de desenvolvimento</a> no twitter podem criar APPS. Essas contas são contas do twitter normais, que fizeram a solicitação para o modo de desenvolvimento.</p>
-<p>Eu já tinha minha conta pessoal ativada no modo desenvolvedor, uma opção seria criar o APP na minha conta e posteriormente instalar o mesmo na conta da Bienal. Esse de instalação é o mesmo que você faz, quando autoriza um APP de terceiros na sua conta.</p>
-<p>Eu preferi solicitar o acesso das features de desenvolvimento para a conta da Bienal, para que em um futuro não distante as pessoas não ficassem depentes de mim, caso quisessem fazer alguma alteração no chatbot ou no próprio APP.</p>
+<p>O Twitter trabalha com APPS (aplicações) dentro da plataforma. Essas aplicações podem ser distribuídas ou não. Cada aplicação tem seus tokens de acesso entre outras coisas para organização.</p>
+<p>Apenas <a href="https://developer.twitter.com/en/apply-for-access">contas de desenvolvimento</a> no twitter podem criar APPS. Essas contas são, perfils normais do twitter, que fizeram a solicitação para o modo de desenvolvimento.</p>
+<p>Eu já tinha minha conta pessoal ativada no modo desenvolvedor. Uma opção seria criar o APP no meu perfil e posteriormente instalar o mesmo na conta da Bienal. Esse modo de instalação é o mesmo que você faz quando autoriza um APP de terceiros na sua conta.</p>
+<p>Eu preferi solicitar o acesso das features de desenvolvimento para a conta da própria Bienal, para que no futuro não distante as pessoas não ficassem dependentes de mim caso quisessem fazer alguma alteração no chatbot ou no próprio APP.</p>
 <h4>Solicitando o acesso</h4>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -69,11 +69,12 @@
       />
   </a>
     </span></p>
-<p>O primeiro passo foi soliticar acesso a uma <a href="https://developer.twitter.com/en/apply-for-access">conta de desenvolvimento</a> no twitter, essa parte é fácil mas um pouco chata. Respondi os questionários até o final. O twitter demorou um pouco para autorizar, talvez pelo número de seguidores da conta.</p>
+<p>O primeiro passo foi solicitar acesso a uma <a href="https://developer.twitter.com/en/apply-for-access">conta de desenvolvimento</a> no twitter. Essa parte é fácil mas um pouco chata. Respondi os questionários até o final. </p>
+<p>O twitter demorou um pouco para autorizar a solicitação, talvez pelo número de seguidores da conta, quem eram muitos.</p>
 <p>Se você for criar o seu chatbot, se prepare para um formulário bem chato.
-Recomendo que você descreva extamente o que irá fazer com os poderes que irá conseguir, o pessoal está meio embaçado com as autorizaçoes. </p>
+Recomendo que você descreva exatamente o que irá fazer com os poderes que irá conseguir, já que o pessoal está meio embaçado com as autorizações. </p>
 <p>Se você está apenas estudando, coloque isso lá, assim, a autorização costuma ser mais rápida, quase instantanea.</p>
-<p>A, as respostas (e as perguntas) são em inglês, então se não está confortavel, vai na fé com o tradutor <a href="https://translate.google.com/">tradutor</a></p>
+<p>Ah, as respostas (e as perguntas) são em inglês, então se você não estiver confortavel, vai na fé com o <a href="https://translate.google.com/">tradutor</a></p>
 <p>Depois do processo feito, você deve ter uma tela como essa:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -140,7 +141,7 @@ Recomendo que você descreva extamente o que irá fazer com os poderes que irá 
   </a>
     </span></p>
 <h3>Webhook do twitter</h3>
-<p>Para a parte de comunicação, parti para pesquisar como o twitter trabalhava com a parte de chats. Felizmente encontrei uma parte da API deles chamada de <a href="https://developer.twitter.com/en/products/accounts-and-users/account-activity-api">Account Activity API</a>. Essa API permite que você cadastre webhooks para ações de uma conta, uma nova DM, novos seguidores e coisas do tipo envolvendo a conta.</p>
+<p>Para a parte de comunicação, parti para pesquisar como o twitter trabalhava com a parte de chats. Felizmente encontrei uma parte da API deles chamada de <a href="https://developer.twitter.com/en/products/accounts-and-users/account-activity-api">Account Activity API</a>. Essa API permite que você cadastre webhooks para ações de uma conta, uma nova DM, novos seguidores e coisas do tipo.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
@@ -174,15 +175,15 @@ Recomendo que você descreva extamente o que irá fazer com os poderes que irá 
   </a>
     </span></p>
 <p>Para ativar a API, <a href="https://developer.twitter.com/en/account/environments">acesse esse link</a> e configure um novo ambiente. Eu achei a documentação do twitter bem fraca nesse sentido, tive que dar várias voltas para encontrar o que queria.</p>
-<p>Após o registro do ambiente da Account Activity API, o próximo passo foi de fato cadastrar uma API minha de Webhook no twitter. Para isso, são dois passos, cada passo é uma chamada HTTP na API do twitter:</p>
+<p>Após o registro do ambiente da Account Activity API o próximo passo foi de fato cadastrar uma API minha de Webhook no Twitter. Cada passo é uma chamada HTTP na API do twitter, sendo assim são dois passos:</p>
 <ul>
-<li>Registrar webhook</li>
-<li>Adicionar uma “subscription” na conta para ativar o webhook</li>
+<li>Registrar Webhook</li>
+<li>Adicionar uma “subscription” na conta para ativar o Webhook</li>
 </ul>
 <h4>Registrar webhook</h4>
-<p>A API regitrada como Webhook deve ter uma rota com mapeamento GET e POST, no meu caso usei <code class="language-text">/webhooks/twitter</code>. Incialmente o twitter irá fazer um GET nessa rota, para validar se sua API está nos conformes deles.</p>
-<p>No get eles te informan um <code class="language-text">crc_token</code>, você tem que gerar um HASH maluco com essa info e um dos tokens do twitter (consumer secret) e, devolver para eles. Se você fizer o cálculo certo, o twitter irá assumir sua API como um webhook válido.</p>
-<p>Segue um pedaço da minha implementação da solução:</p>
+<p>A API registrada como Webhook deve ter uma rota com mapeamento GET e POST. No meu caso usei <code class="language-text">/webhooks/twitter</code>. Inicialmente o twitter irá fazer um GET nessa rota, para validar se sua API está nos conformes deles.</p>
+<p>No GET eles te informan um <code class="language-text">crc_token</code>, você tem que gerar um HASH maluco com essa informação e um dos tokens do twitter (consumer secret) e devolver para eles. Se você fizer o cálculo certo, o twitter irá assumir sua API como um Webhook válido.</p>
+<p>Segue um pedaço da implementação:</p>
 
         <deckgo-highlight-code language="javascript"  terminal="carbon" theme="material" line-numbers="true" editable="true" >
           <code slot="code">const getChallengeResponse = ({
@@ -211,7 +212,7 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
 })</code>
         </deckgo-highlight-code>
       
-<p>Eu criei minha API usando <code class="language-text">express</code>, e subi utilizando o <a href="https://vercel.com/">now.sh</a>, que agora é <a href="https://vercel.com/">vercel</a>. A configuração de deploy foi quase a mesma de <a href="http://localhost:8000/telegram-bot/">um post anterior meu</a>.</p>
+<p>Eu criei minha API usando <code class="language-text">express</code> e subi utilizando o <a href="https://vercel.com/">now.sh</a>, que agora é <a href="https://vercel.com/">vercel</a>. A configuração de deploy foi quase a mesma de <a href="/telegram-bot/">um post anterior meu</a>.</p>
 <p>Com a <strong>MINHA API</strong> no ar, fiz o cadastro do Webhook no twitter.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -247,9 +248,9 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
     </span></p>
 <p><strong>POST</strong>
 <code class="language-text">https://api.twitter.com/1.1/account_activity/all/{NOME_DO_SEU_AMBIENTE}/webhooks.json</code></p>
-<p>A requisição deve ser feita utilização a autenticação OAuth 1.0. Dentro do APP no twitter, é possível encontrar todos os tokens.</p>
-<h4>Registrando Incrição (subscription)</h4>
-<p>Após o cadastro do Webhook é necessário ativar o inscrição daquele webhook para o seu usuário na API de <strong>Account Activity API</strong>.</p>
+<p>A requisição deve ser feita utilizando a autenticação <strong>OAuth 1.0</strong>. Dentro do APP no twitter é possível encontrar todos os tokens.</p>
+<h4>Registrando Inscrição (subscription)</h4>
+<p>Após o cadastro do Webhook é necessário ativar a inscrição daquele Webhook para o seu usuário na API de <strong>Account Activity API</strong>.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
@@ -283,7 +284,7 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
     </span></p>
 <p><strong>POST</strong>
 <code class="language-text">https://api.twitter.com/1.1/account_activity/all/{NOME_DO_SEU_AMBIENTE}/subscriptions.json</code></p>
-<p>Depois disso o twitter passa a enviar alguns eventos na API que você cadastrou posteriormente. Os que eu utilizei foram os de DM, as informações chegam num objeto assim:</p>
+<p>Depois disso, o twitter passa a enviar alguns eventos na API. Os que eu utilizei foram os de DM, as informações chegam num objeto assim:</p>
 
         <deckgo-highlight-code language="json"  terminal="carbon" theme="material" line-numbers="true" editable="true" >
           <code slot="code">{
@@ -343,9 +344,9 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
       />
   </a>
     </span></p>
-<p>Se você abrir o chatbot da Bienal atualmente, automaticamente vai receber uma mensagem de boas vindas (como na imagem acima). Essa mensagem de entrada é um recurso do twitter chamado “Welcome Messages”. Com essa mensagem dois botões “Quick Reply” irão aparecer no chat.</p>
-<p>Na primeira versão eu estava utilizando o callback desses botões para triggar ações e mensagens, porem, atualmente demos uma sofistiada e estamos utilizada NLP para construção dos fluxos.</p>
-<p>Nlp ou Processamento de linguagem natural em portugues é uma sub area da inteligência artificial bem conhecida no meio de chatbots. Como isso funciona: O chatbot recebe uma mensagem, faz o processamento usando as ferramentas de NLP e partir disso, consegue saber qual é a “intenção” do usuário, para que programaticamente você tomar possa tomar uma ação. É necessário mapear as possíveis intenções para que não ocorram erros.</p>
+<p>Se você abrir o chatbot da Bienal hoje, vai receber uma mensagem de boas vindas (como na imagem acima). Essa mensagem de entrada é um recurso do twitter chamado <strong>“Welcome Messages”</strong>. Com essa mensagem, dois botões cada passo é uma chamada HTTP na API do twitter irão aparecer no chat.</p>
+<p>Na primeira versão eu estava utilizando o <strong>callback</strong> desses botões para <strong>triggar</strong> ações e mensagens. Entretanto atualmente estamos melhorando os fluxos com a utilização de <strong>NLP</strong>.</p>
+<p><strong>NLP</strong> ou Processamento de Linguagem Natural em português, é uma subárea da inteligência artificial, bem conhecida no meio de chatbots. O chatbot recebe uma mensagem, faz o processamento usando as ferramentas de <strong>NLP</strong> e à partir disso, consegue saber qual é a <strong>“intenção”</strong> do usuário, para que programaticamente você tomar possa tomar uma ação. É necessário mapear as possíveis intenções para que não ocorram erros.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
@@ -378,10 +379,10 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
       />
   </a>
     </span></p>
-<p>Essas intenções não saem do nada, é necessário fazer um “treinamento” prévio passando exemplos de frases que o usuário pode enviar em cada intenção. Esse treinamento gera um MODEL, que no final das contas são vários processamentos salvos para que quando seja necessário, o processamento de intenção seja mais rápido.</p>
+<p>Essas intenções não saem do nada, é necessário fazer um “treinamento” prévio, passando exemplos de frases que o usuário pode enviar em cada intenção. Esse treinamento gera um MODEL, que no final das contas são vários processamentos salvos para que, quando seja necessário o processamento de intenção seja mais rápido.</p>
 <h4>Akamaru Framework</h4>
-<p>Recentemente iniciei o <a href="https://github.com/eptaccio/akamaru">Akamaru framework</a> escrito em TS, uma ferramenta para facilitar a parte do gerenciamento de estados e intenções, alem da parte de NLP. É baseado na minha experiência com soluções para chatbot como, Ibm Watson, Dialog Flow entre outros.</p>
-<p>Com o Akaramu consigo fazer o treinamento dos modelos de intenções e definir os fluxos a partir de um objeto javascript. Nessa organização temos <strong>estados</strong>, <strong>intenções</strong>, <strong>ações</strong> e <strong>resolvers</strong>. </p>
+<p>Recentemente iniciei o <a href="https://github.com/eptaccio/akamaru">Akamaru framework</a> escrito em <strong>TypeScript</strong>, uma ferramenta para facilitar a parte do gerenciamento de estados e intenções, além da parte de NLP. É baseado na minha experiência com soluções para chatbot como: IBM Watson, Dialog Flow, entre outros.</p>
+<p>Com o Akaramu consigo fazer o treinamento dos modelos de intenções e definir os fluxos à partir de um objeto javascript. Nessa organização temos <strong>estados</strong>, <strong>intenções</strong>, <strong>ações</strong> e <strong>resolvers</strong>. </p>
 <ul>
 <li><strong>Estado</strong>   </li>
 </ul>
@@ -412,7 +413,7 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
 }</code>
         </deckgo-highlight-code>
       
-<p>Configurações de textos iniciais, nome do estado e uma ação definida para caso o processo de NLP não identifique nenhuma intenção mapeada para aquele estado. Um estado tabém agrupa <strong>ações</strong>.</p>
+<p>Configurações de textos iniciais, nome do estado e uma ação definida, para caso o processo de NLP não identifique nenhuma intenção mapeada para aquele estado. Um estado também agrupa <strong>ações</strong>.</p>
 <ul>
 <li><strong>Ações</strong></li>
 </ul>
@@ -449,9 +450,9 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
 ]</code>
         </deckgo-highlight-code>
       
-<p>As ações mapeam as respostas, ou redirecionamentos para outros estados. As respostam são sempre um array, pois é possível declarar várias, o Akamaru vai escolher uma aleatória para devolver ao usuário, deixando assim o bot um pouco mais humanizado.</p>
-<p>No caso de intenções onde ação é mais complexa que só retornar uma reposta, é possível declarar um <strong>handler</strong> e, posteriormente retornar as possíveis respostas.</p>
-<p>As <strong>ações</strong> são baseada em <strong>inteções</strong>.</p>
+<p>As ações mapeam as respostas ou redirecionamentos para outros estados. As respostam são sempre um array, pois é possível declarar várias. O Akamaru vai escolher uma aleatória para devolver ao usuário, deixando assim o bot um pouco mais humanizado.</p>
+<p>No caso de intenções onde ação é mais complexa que só retornar uma resposta, é possível declarar um <strong>handler</strong> e posteriormente retornar as possíveis respostas.</p>
+<p>As <strong>ações</strong> são baseada em <strong>intenções</strong>.</p>
 <ul>
 <li><strong>Intenções</strong></li>
 </ul>
@@ -471,12 +472,12 @@ app.get(&#39;/webhooks/twitter&#39;, (req, res) =&gt; {
 ]</code>
         </deckgo-highlight-code>
       
-<p>As intenções tem seu nome e exemplos de digitação do usuário. Os exemplos são utilizados no treinamento do MODEL, quanto mais exemplos, mais acertivo fica a classificação de intenção.</p>
+<p>As intenções tem seu nome e exemplos de digitação do usuário. Os exemplos são utilizados no treinamento do MODEL. Quanto mais exemplos, mais acertivo fica a classificação de intenção.</p>
 <ul>
 <li><strong>resolvers / gerenciamento da sessão</strong></li>
 </ul>
-<p>Na definição do bot temos uma parte destinada a resolvers, esses são os métodos <strong>getSession</strong>, <strong>saveSession</strong>. Como os nomes dizem, esses métodos recuperam e salvam a sessão do usuário, assim o usuário do framework (no caso eu mesmo) posso definir qual estratégia irei usar em cada bot.</p>
-<p>Nesse bot estou utilizando o <a href="https://redis.io/">Redis</a>, um banco open source que armazena dados em memoria, para que a leitura e escrita mais rápida. É conhecido como um banco de cache.</p>
+<p>Na definição do bot, temos uma parte destinada a resolvers. Esses são os métodos <strong>getSession</strong> e <strong>saveSession</strong>. Como os nomes dizem esses métodos recuperam e salvam a sessão do usuário, assim o usuário do framework (no caso eu mesmo) posso definir qual estratégia irei usar em cada bot.</p>
+<p>Nesse bot estou utilizando o <a href="https://redis.io/">Redis</a>, um banco de dados open source que armazena dados em memória, para que a leitura e escrita seja mais rápida. É conhecido como um banco de cache.</p>
 
         <deckgo-highlight-code language="javascript"  terminal="carbon" theme="material" line-numbers="true" editable="true" >
           <code slot="code">const THIRTY_MINUTES = 1800000
@@ -529,10 +530,10 @@ const getSession = async userId =&gt; {
       />
   </a>
     </span></p>
-<p>Iremos programar mais fluxos no bot conforme as necessidades surgirem. Por enquanto ele consegue ajudar com pessoas querendo fazer doações de livros ou financeiras, em qualquer fluxo é possível solicitar para falar com um humano, então uma notificação é disparada para o <a href="https://twitter.com/alamoju">@alamoju</a> no telegram.</p>
+<p>Iremos programar mais fluxos no bot conforme as necessidades surgirem. Por enquanto, ele consegue ajudar as pessoas à fazer doações de livros ou financeiras. Em qualquer fluxo é possível solicitar para falar com um humano, sendo assim uma notificação é disparada para o <a href="https://twitter.com/alamoju">@alamoju</a> no Telegram.</p>
 <p><strong>Obrigado por ler até o final.</strong> Se tiver algum feedback ou conseguir construir algo legal à partir disso, por favor me chame no <a href="https://twitter.com/eptaccio">twitter</a> ou <a href="https://t.me/eptaccio">telegram</a>.</p>
 <hr>
-<p>Se ficou interessado em chabots, confira esse episódio do Quebradev, movimento onde faço parte. Falamos sobre a historia, presente e implicações sociais de automatizações desse tipo.</p>
+<p>Se ficou interessado em chatbots, confira esse episódio do Quebradev, movimento onde faço parte. Falamos sobre a história, presente e implicações sociais de automatizações desse tipo.</p>
 <div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 25.5%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem" > <iframe src="https://anchor.fm/quebradev/embed/episodes/41---Tech-Chatbots-ee7jav" frameborder="0" scrolling="no" style=" position: absolute; top: 0; left: 0; width: 100%; height: 100%; "></iframe> </div></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:0rem"><a style="box-shadow:none" href="/"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQDAQX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAgME/9oADAMBAAIQAxAAAAHybtMUe8BBwz6bRC//xAAdEAACAQQDAAAAAAAAAAAAAAABAgMABBEiEBJB/9oACAEBAAEFAsdTHNMKF0tOukLkP7nUcf/EABoRAAICAwAAAAAAAAAAAAAAAAACARAREzH/2gAIAQMBAT8BhcmtheRX/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEQERIT/9oACAECAQE/AdUdUOP/xAAfEAABAQkBAAAAAAAAAAAAAAABAAIQERIgITFSYXH/2gAIAQEABj8CC3Vw0D4uxcTNmj//xAAbEAEAAwADAQAAAAAAAAAAAAABABEhMVFxYf/aAAgBAQABPyFvBReGUhSKv7GmE5I0begey9nkB1NXBU9nfqDP/9oADAMBAAIAAwAAABATyMD/xAAYEQACAwAAAAAAAAAAAAAAAAAAARBBgf/aAAgBAwEBPxB+xqqR/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQAxQRD/2gAIAQIBAT8QTqoLss8//8QAHBABAQEAAwADAAAAAAAAAAAAAREAITFBYYGh/9oACAEBAAE/EFIgtJOc0LUCLHvO5vJK2P1ou3QgH0n7haSDT2ZnJ77b0Hj8ZirzkyAHpDLN/9k=" alt="marcos" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/c3b7136072722d1099c0b27894b8246c/99438/profile-pic.jpg 1x,
 /static/c3b7136072722d1099c0b27894b8246c/aba1d/profile-pic.jpg 1.5x,
 /static/c3b7136072722d1099c0b27894b8246c/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/c3b7136072722d1099c0b27894b8246c/99438/profile-pic.jpg 1x,
