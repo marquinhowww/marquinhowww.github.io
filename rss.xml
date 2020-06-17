@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[eptaccio]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Jun 2020 02:21:18 GMT</lastBuildDate><item><title><![CDATA[Construindo o chatbot da Bienal da Quebrada]]></title><description><![CDATA[A Bienal do Livro da Quebrada tem como missão a democracia de oportunidades. Levar para as favelas e periferias a literatura e um evento…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/quebradinha-bot/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/quebradinha-bot/</guid><pubDate>Tue, 16 Jun 2020 22:43:39 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[eptaccio]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Jun 2020 02:24:17 GMT</lastBuildDate><item><title><![CDATA[Construindo o chatbot da Bienal da Quebrada]]></title><description><![CDATA[A Bienal do Livro da Quebrada tem como missão a democracia de oportunidades. Levar para as favelas e periferias a literatura e um evento…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/quebradinha-bot/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/quebradinha-bot/</guid><pubDate>Tue, 16 Jun 2020 22:43:39 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
     &gt;
@@ -30,10 +30,10 @@
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;A &lt;a href=&quot;https://twitter.com/bienalquebrada&quot;&gt;&lt;strong&gt;Bienal do Livro da Quebrada&lt;/strong&gt;&lt;/a&gt; tem como missão a democracia de oportunidades. Levar para as favelas e periferias a literatura e um evento literário que dialogue na linguagem de quem teve e tem o acesso negado. As Bienais ocorrem sempre nos grandes centros, a distância geográfica e social afasta desses eventos as pessoas que moram nas periferias, ainda que haja uma tentativa de inclusão, ela é feita de maneira que quem vem das periferias não se sentem pertencentes a esses espaços.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Felizmente a Bienal recebe várias solicitações de pessoas querendo doar livros, então o criador do movimento, &lt;a href=&quot;https://twitter.com/alamoju&quot;&gt;@alamoju&lt;/a&gt; me chamou e perguntou se seria possível automatizar um pouco o processo de doações via DM do Twitter.&lt;/p&gt;
-&lt;p&gt;Já tinha feito algumas coisas utilizando a API do twitter mas o de Direct Messages era novidade para mim até então. Ainda estamos trabalhano no bot mas vou mostrar como foi essa saga até agora.&lt;/p&gt;
-&lt;h3&gt;Conseguindo keys da API do twitter&lt;/h3&gt;
+&lt;p&gt;Já tinha feito algumas coisas utilizando a API do Twitter mas o de Direct Messages era novidade para mim até então. Ainda estamos trabalhano no bot mas vou mostrar como foi essa saga até agora.&lt;/p&gt;
+&lt;h3&gt;Conseguindo keys da API do Twitter&lt;/h3&gt;
 &lt;p&gt;O Twitter trabalha com APPS (aplicações) dentro da plataforma. Essas aplicações podem ser distribuídas ou não. Cada aplicação tem seus tokens de acesso entre outras coisas para organização.&lt;/p&gt;
-&lt;p&gt;Apenas &lt;a href=&quot;https://developer.twitter.com/en/apply-for-access&quot;&gt;contas de desenvolvimento&lt;/a&gt; no twitter podem criar APPS. Essas contas são, perfils normais do twitter, que fizeram a solicitação para o modo de desenvolvimento.&lt;/p&gt;
+&lt;p&gt;Apenas &lt;a href=&quot;https://developer.twitter.com/en/apply-for-access&quot;&gt;contas de desenvolvimento&lt;/a&gt; no Twitter podem criar APPS. Essas contas são, perfils normais do Twitter, que fizeram a solicitação para o modo de desenvolvimento.&lt;/p&gt;
 &lt;p&gt;Eu já tinha minha conta pessoal ativada no modo desenvolvedor. Uma opção seria criar o APP no meu perfil e posteriormente instalar o mesmo na conta da Bienal. Esse modo de instalação é o mesmo que você faz quando autoriza um APP de terceiros na sua conta.&lt;/p&gt;
 &lt;p&gt;Eu preferi solicitar o acesso das features de desenvolvimento para a conta da própria Bienal, para que no futuro não distante as pessoas não ficassem dependentes de mim caso quisessem fazer alguma alteração no chatbot ou no próprio APP.&lt;/p&gt;
 &lt;h4&gt;Solicitando o acesso&lt;/h4&gt;
@@ -69,8 +69,8 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;O primeiro passo foi solicitar acesso a uma &lt;a href=&quot;https://developer.twitter.com/en/apply-for-access&quot;&gt;conta de desenvolvimento&lt;/a&gt; no twitter. Essa parte é fácil mas um pouco chata. Respondi os questionários até o final. &lt;/p&gt;
-&lt;p&gt;O twitter demorou um pouco para autorizar a solicitação, talvez pelo número de seguidores da conta, quem eram muitos.&lt;/p&gt;
+&lt;p&gt;O primeiro passo foi solicitar acesso a uma &lt;a href=&quot;https://developer.twitter.com/en/apply-for-access&quot;&gt;conta de desenvolvimento&lt;/a&gt; no Twitter. Essa parte é fácil mas um pouco chata. Respondi os questionários até o final. &lt;/p&gt;
+&lt;p&gt;O Twitter demorou um pouco para autorizar a solicitação, talvez pelo número de seguidores da conta, quem eram muitos.&lt;/p&gt;
 &lt;p&gt;Se você for criar o seu chatbot, se prepare para um formulário bem chato.
 Recomendo que você descreva exatamente o que irá fazer com os poderes que irá conseguir, já que o pessoal está meio embaçado com as autorizações. &lt;/p&gt;
 &lt;p&gt;Se você está apenas estudando, coloque isso lá, assim, a autorização costuma ser mais rápida, quase instantanea.&lt;/p&gt;
@@ -108,7 +108,7 @@ Recomendo que você descreva exatamente o que irá fazer com os poderes que irá
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;No meu caso criei um APP chamado &lt;strong&gt;“xiaomi é melhor que apple”&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;É necessário configurar o APP para ter acesso a Direct Messages do twitter.&lt;/p&gt;
+&lt;p&gt;É necessário configurar o APP para ter acesso a Direct Messages do Twitter.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
@@ -174,7 +174,7 @@ Recomendo que você descreva exatamente o que irá fazer com os poderes que irá
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Para ativar a API, &lt;a href=&quot;https://developer.twitter.com/en/account/environments&quot;&gt;acesse esse link&lt;/a&gt; e configure um novo ambiente. Eu achei a documentação do twitter bem fraca nesse sentido, tive que dar várias voltas para encontrar o que queria.&lt;/p&gt;
+&lt;p&gt;Para ativar a API, &lt;a href=&quot;https://developer.twitter.com/en/account/environments&quot;&gt;acesse esse link&lt;/a&gt; e configure um novo ambiente. Eu achei a documentação do Twitter bem fraca nesse sentido, tive que dar várias voltas para encontrar o que queria.&lt;/p&gt;
 &lt;p&gt;Após o registro do ambiente da Account Activity API o próximo passo foi de fato cadastrar uma API minha de Webhook no Twitter. Cada passo é uma chamada HTTP na API do twitter, sendo assim são dois passos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Registrar Webhook&lt;/li&gt;
@@ -344,7 +344,7 @@ app.get(&amp;#39;/webhooks/twitter&amp;#39;, (req, res) =&amp;gt; {
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Se você abrir o chatbot da Bienal hoje, vai receber uma mensagem de boas vindas (como na imagem acima). Essa mensagem de entrada é um recurso do twitter chamado &lt;strong&gt;“Welcome Messages”&lt;/strong&gt;. Com essa mensagem, dois botões cada passo é uma chamada HTTP na API do twitter irão aparecer no chat.&lt;/p&gt;
+&lt;p&gt;Se você abrir o chatbot da Bienal hoje, vai receber uma mensagem de boas vindas (como na imagem acima). Essa mensagem de entrada é um recurso do Twitter chamado &lt;strong&gt;“Welcome Messages”&lt;/strong&gt;. Com essa mensagem, dois botões cada passo é uma chamada HTTP na API do Twitter irão aparecer no chat.&lt;/p&gt;
 &lt;p&gt;Na primeira versão eu estava utilizando o &lt;strong&gt;callback&lt;/strong&gt; desses botões para &lt;strong&gt;triggar&lt;/strong&gt; ações e mensagens. Entretanto atualmente estamos melhorando os fluxos com a utilização de &lt;strong&gt;NLP&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NLP&lt;/strong&gt; ou Processamento de Linguagem Natural em português, é uma subárea da inteligência artificial, bem conhecida no meio de chatbots. O chatbot recebe uma mensagem, faz o processamento usando as ferramentas de &lt;strong&gt;NLP&lt;/strong&gt; e à partir disso, consegue saber qual é a &lt;strong&gt;“intenção”&lt;/strong&gt; do usuário, para que programaticamente você tomar possa tomar uma ação. É necessário mapear as possíveis intenções para que não ocorram erros.&lt;/p&gt;
 &lt;p&gt;&lt;span
